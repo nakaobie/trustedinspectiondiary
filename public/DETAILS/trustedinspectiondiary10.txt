@@ -1,0 +1,89 @@
+Perfect! Let’s prepare a **Service schema bundle** for your **Services page** so Google can highlight each offering individually (like rental inspections, student housing, relocation support).  
+
+---
+
+## 📑 Example JSON‑LD for Multiple Services
+Paste this into the `<head>` of your **services.html**:
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Services - Trusted Inspection Diary",
+  "url": "https://trustedinspectiondiary.com.au/services.html",
+  "mainEntity": [
+    {
+      "@type": "Service",
+      "serviceType": "Rental Property Inspection",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Trusted Inspection Diary"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Hobart, Tasmania"
+      },
+      "description": "We attend rental property inspections on behalf of clients to provide independent reports."
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Student Housing Check",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Trusted Inspection Diary"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Tasmania, Australia"
+      },
+      "description": "We verify student accommodation options to ensure accurate information and safe housing."
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Relocation Support",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Trusted Inspection Diary"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Tasmania, Australia"
+      },
+      "description": "We assist clients with settling into new homes and communities in Tasmania."
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Landlord Routine Inspection",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Trusted Inspection Diary"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Tasmania, Australia"
+      },
+      "description": "We conduct routine property inspections for landlords to ensure properties are well maintained."
+    }
+  ]
+}
+</script>
+```
+
+---
+
+## ✅ Why This Helps
+- Each **Service** is clearly defined → Google can highlight them individually in search results.  
+- Improves **SEO visibility** for specific offerings (e.g., “student housing inspections Tasmania”).  
+- Keeps everything bundled under one **WebPage** entity for clarity.  
+
+---
+
+## ⚡ Pro Tip
+- Tailor descriptions to be concise and keyword‑rich.  
+- Add **priceRange** or **offers** if you want Google to show pricing.  
+- Validate with **Google’s Rich Results Test** after adding.  
+
+---
+
+👉 Would you like me to also prepare an **Offers schema extension** (so each service can show pricing or booking info in search results)?

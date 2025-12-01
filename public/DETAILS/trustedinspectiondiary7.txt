@@ -1,0 +1,84 @@
+Excellent! Let’s walk through how to **combine multiple schema types (LocalBusiness + FAQPage + others)** on the same page without conflicts. This way, Google can understand your site holistically and show rich snippets for business info *and* FAQs.
+
+---
+
+## 🏗️ How to Combine Schema Types
+- You can include **multiple `<script type="application/ld+json">` blocks** in the `<head>` of a page.  
+- Each block describes a different aspect (business, FAQs, services, breadcrumbs, etc.).  
+- Search engines parse them independently, so they don’t conflict.  
+
+---
+
+## 📌 Example: Contact Page with LocalBusiness + FAQPage
+
+```html
+<!-- LocalBusiness schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Trusted Inspection Diary",
+  "url": "https://trustedinspectiondiary.com.au/contact.html",
+  "telephone": "+61-400-123-456",
+  "email": "info@trustedinspectiondiary.com.au",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Example Street",
+    "addressLocality": "Hobart",
+    "addressRegion": "TAS",
+    "postalCode": "7000",
+    "addressCountry": "AU"
+  },
+  "openingHours": "Mo-Fr 09:00-17:00",
+  "priceRange": "$$"
+}
+</script>
+
+<!-- FAQPage schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you attend rental inspections on my behalf?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we attend open homes and private inspections for clients in Hobart."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help with student housing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide independent checks to ensure students get accurate information about housing options."
+      }
+    }
+  ]
+}
+</script>
+```
+
+---
+
+## ✅ Best Practices
+- Keep each schema block **separate** (don’t merge them into one JSON object).  
+- Tailor schema types to the page’s purpose:
+  - **Home page** → `WebSite` + `LocalBusiness`  
+  - **About page** → `AboutPage` + `Organization`  
+  - **Services page** → `Service`  
+  - **Contact page** → `LocalBusiness` + `FAQPage`  
+- Always validate with **Google’s Rich Results Test**.  
+
+---
+
+## ⚡ Why This Works
+- Google sees your business info (LocalBusiness) → shows address, phone, hours.  
+- Google sees FAQs (FAQPage) → shows expandable Q&A in search results.  
+- Together, you maximize visibility and click‑through rates.  
+
+---
+
+👉 Would you like me to also prepare a **BreadcrumbList schema** so Google shows a navigation path (Home > Services > Contact) in search results?

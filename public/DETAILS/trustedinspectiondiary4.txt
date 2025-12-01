@@ -1,0 +1,87 @@
+Great! Let’s add **structured data (JSON‑LD)** to your Vite multi‑page site so Google and other search engines can display rich snippets (like services, reviews, or contact info).  
+
+---
+
+## 📌 What is JSON‑LD?
+- JSON‑LD = *JavaScript Object Notation for Linked Data*.  
+- It’s a `<script>` block inside your HTML `<head>` that describes your business in a way search engines understand.  
+- Helps Google show rich results (like business info, breadcrumbs, FAQs, reviews).  
+
+---
+
+## 🏠 Example: Local Business Structured Data
+For a business like *Trusted Inspection Diary*, you’d add this to **each page’s `<head>`**:
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Trusted Inspection Diary",
+  "image": "https://trustedinspectiondiary.com.au/assets/logo.png",
+  "url": "https://trustedinspectiondiary.com.au/",
+  "telephone": "+61-400-123-456",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Example Street",
+    "addressLocality": "Hobart",
+    "addressRegion": "TAS",
+    "postalCode": "7000",
+    "addressCountry": "AU"
+  },
+  "openingHours": "Mo-Fr 09:00-17:00",
+  "priceRange": "$$",
+  "description": "Independent property inspections, rental viewings, and relocation support in Tasmania.",
+  "sameAs": [
+    "https://www.facebook.com/trustedinspectiondiary",
+    "https://www.instagram.com/trustedinspectiondiary"
+  ]
+}
+</script>
+```
+
+---
+
+## 📑 Other Useful Schema Types
+- **BreadcrumbList** → Helps Google show navigation paths.  
+- **FAQPage** → Great for a FAQ section, shows expandable answers in search results.  
+- **Service** → If you want to highlight specific services (e.g., “Student Housing Inspection”).  
+
+Example for FAQ:
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you attend rental inspections on my behalf?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we attend open homes and private inspections for clients in Hobart."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help with student housing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide independent checks to ensure students get accurate information about housing options."
+      }
+    }
+  ]
+}
+</script>
+```
+
+---
+
+## ✅ Best Practices
+- Place JSON‑LD inside `<head>` of each HTML file.  
+- Tailor metadata per page (e.g., About page might use `AboutPage` schema).  
+- Validate with **Google’s Rich Results Test** or **Schema.org validator**.  
+
+---
+
+👉 Do you want me to create a **ready‑to‑use JSON‑LD bundle** for your site (Home, About, Services, Contact) so you can paste it directly into each page?

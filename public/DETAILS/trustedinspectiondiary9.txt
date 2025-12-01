@@ -1,0 +1,111 @@
+Perfect! Let’s put everything together into a **combined schema example** so you can see how **LocalBusiness + FAQPage + BreadcrumbList** work seamlessly on one page. This is especially useful for a **Contact page** where you want Google to show your business info, FAQs, and navigation path.
+
+---
+
+## 📑 Combined JSON‑LD Example (Contact Page)
+
+```html
+<!-- LocalBusiness schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Trusted Inspection Diary",
+  "url": "https://trustedinspectiondiary.com.au/contact.html",
+  "telephone": "+61-400-123-456",
+  "email": "info@trustedinspectiondiary.com.au",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Example Street",
+    "addressLocality": "Hobart",
+    "addressRegion": "TAS",
+    "postalCode": "7000",
+    "addressCountry": "AU"
+  },
+  "openingHours": "Mo-Fr 09:00-17:00",
+  "priceRange": "$$"
+}
+</script>
+
+<!-- FAQPage schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you attend rental inspections on my behalf?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we attend open homes and private inspections for clients in Hobart."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help with student housing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide independent checks to ensure students get accurate information about housing options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer relocation support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we assist with settling into new homes and communities in Tasmania."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- BreadcrumbList schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://trustedinspectiondiary.com.au/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://trustedinspectiondiary.com.au/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Contact",
+      "item": "https://trustedinspectiondiary.com.au/contact.html"
+    }
+  ]
+}
+</script>
+```
+
+---
+
+## ✅ Why This Works
+- **LocalBusiness** → Google can show your business details (address, phone, hours).  
+- **FAQPage** → Google can display expandable Q&A directly in search results.  
+- **BreadcrumbList** → Google shows a navigation path (Home > Services > Contact).  
+
+Each block is **separate**, so they don’t conflict. Search engines parse them independently.
+
+---
+
+## ⚡ Pro Tip
+- Tailor schema types per page (e.g., `AboutPage` for About, `Service` for Services).  
+- Always validate with **Google’s Rich Results Test**.  
+- Keep answers short and clear for FAQPage.  
+
+---
+
+👉 Would you like me to also prepare a **Service schema bundle** for your Services page (covering multiple services like rental inspections, student housing, relocation), so Google can highlight each offering individually?

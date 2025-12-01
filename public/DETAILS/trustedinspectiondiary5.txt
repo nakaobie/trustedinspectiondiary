@@ -1,0 +1,114 @@
+Perfect! Let’s create a **ready‑to‑use JSON‑LD bundle** for your site (Home, About, Services, Contact). You can paste each block into the `<head>` of the corresponding HTML file.  
+
+---
+
+## 🏠 Home Page (`index.html`)
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Trusted Inspection Diary",
+  "url": "https://trustedinspectiondiary.com.au/",
+  "description": "Independent property inspections, rental viewings, and relocation support in Tasmania.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Trusted Inspection Diary",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://trustedinspectiondiary.com.au/assets/logo.png"
+    }
+  }
+}
+</script>
+```
+
+---
+
+## 📖 About Page (`about.html`)
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "url": "https://trustedinspectiondiary.com.au/about.html",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Trusted Inspection Diary",
+    "description": "Trusted Inspection Diary provides independent property inspections and relocation support in Tasmania.",
+    "founder": {
+      "@type": "Person",
+      "name": "Your Founder Name"
+    },
+    "foundingDate": "2020",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hobart",
+      "addressRegion": "TAS",
+      "addressCountry": "AU"
+    }
+  }
+}
+</script>
+```
+
+---
+
+## 🛠️ Services Page (`services.html`)
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Property Inspection",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Trusted Inspection Diary",
+    "url": "https://trustedinspectiondiary.com.au/services.html"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Tasmania, Australia"
+  },
+  "description": "We provide property inspections, rental viewings, student housing checks, and relocation support."
+}
+</script>
+```
+
+---
+
+## 📞 Contact Page (`contact.html`)
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "url": "https://trustedinspectiondiary.com.au/contact.html",
+  "mainEntity": {
+    "@type": "LocalBusiness",
+    "name": "Trusted Inspection Diary",
+    "telephone": "+61-400-123-456",
+    "email": "info@trustedinspectiondiary.com.au",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Example Street",
+      "addressLocality": "Hobart",
+      "addressRegion": "TAS",
+      "postalCode": "7000",
+      "addressCountry": "AU"
+    }
+  }
+}
+</script>
+```
+
+---
+
+## ✅ How to Use
+- Paste each block into the `<head>` of the corresponding HTML file.  
+- Replace placeholders (`logo.png`, founder name, phone, email, address) with your real details.  
+- Validate with **Google’s Rich Results Test** to ensure everything is correct.  
+
+---
+
+👉 Would you like me to also prepare a **FAQPage JSON‑LD** for your site’s FAQ section so Google can show expandable answers directly in search results?

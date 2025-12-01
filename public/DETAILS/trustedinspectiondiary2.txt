@@ -1,0 +1,160 @@
+Perfect! Let’s build a **minimal working example** of a multi‑page website using **Vite + vanilla JavaScript**. You’ll be able to copy this structure, run it, and expand it into something like Trusted Inspection Diary.
+
+---
+
+## 📂 Project Structure
+```
+my-website/
+├── index.html        (Home page)
+├── about.html        (About page)
+├── contact.html      (Contact page)
+├── vite.config.js
+├── package.json
+└── src/
+    ├── main.js       (shared JS logic)
+    └── styles.css    (global styles)
+```
+
+---
+
+## 🏠 Example Pages
+
+### `index.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <h1>Welcome to My Website</h1>
+  <p>This is the home page.</p>
+</body>
+</html>
+```
+
+### `about.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <h1>About Us</h1>
+  <p>We provide awesome services using Vite and vanilla JS.</p>
+</body>
+</html>
+```
+
+### `contact.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <h1>Contact Us</h1>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
+```
+
+---
+
+## 🎨 Shared Assets
+
+### `src/styles.css`
+```css
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: blue;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+```
+
+### `src/main.js`
+```js
+// Example: simple form handler
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Form submitted!");
+    });
+  }
+});
+```
+
+---
+
+## ⚙️ Vite Config (`vite.config.js`)
+```js
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        about: 'about.html',
+        contact: 'contact.html'
+      }
+    }
+  }
+})
+```
+
+---
+
+## 🚀 Run It
+```bash
+npm install
+npm run dev
+```
+Visit `http://localhost:5173` and navigate between **Home**, **About**, and **Contact**.
+
+---
+
+👉 This gives you a **multi‑page website** with shared CSS and JS. From here, you can expand into more pages (like Services, FAQs) and style it to look professional.  
+
+Would you like me to also show you how to **add SEO‑friendly metadata and page titles** so search engines treat it like a proper business website?

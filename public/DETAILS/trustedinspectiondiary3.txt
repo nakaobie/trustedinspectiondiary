@@ -1,0 +1,63 @@
+Perfect! Let’s add **SEO‑friendly metadata and page titles** to your Vite multi‑page site so search engines treat it like a professional business website.
+
+---
+
+## 🏷️ Essential Metadata for Each Page
+Inside the `<head>` of each HTML file, include:
+
+```html
+<head>
+  <meta charset="UTF-8" />
+  <title>Trusted Inspection Diary | Home</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Trusted Inspection Diary provides property inspections, rental viewings, and relocation support in Tasmania." />
+  <meta name="keywords" content="property inspection, rental viewing, relocation, Tasmania, student housing" />
+  <meta name="author" content="Trusted Inspection Diary" />
+
+  <!-- Mobile Friendly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="Trusted Inspection Diary" />
+  <meta property="og:description" content="Independent property inspections and relocation support in Tasmania." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://trustedinspectiondiary.com.au/" />
+  <meta property="og:image" content="/assets/preview.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/favicon.ico" />
+</head>
+```
+
+---
+
+## 📌 Best Practices
+- **Unique `<title>` per page**  
+  - `Home`: `Trusted Inspection Diary | Property Inspections in Tasmania`  
+  - `About`: `About Trusted Inspection Diary | Independent Property Services`  
+  - `Contact`: `Contact Trusted Inspection Diary | Book an Inspection`  
+
+- **Unique meta descriptions per page**  
+  - Keep them **under 160 characters**.  
+  - Example for Contact page:  
+    ```html
+    <meta name="description" content="Get in touch with Trusted Inspection Diary to book property inspections or relocation support." />
+    ```
+
+- **Keywords**: Don’t stuff them; just include relevant terms naturally.  
+
+- **Open Graph tags**: Help when links are shared on Facebook, LinkedIn, etc.  
+
+- **Favicon**: Adds professionalism and brand recognition.  
+
+---
+
+## ✅ Why This Matters
+- **Search engines** use titles + descriptions to decide how your site appears in results.  
+- **Social media** uses Open Graph tags to display rich previews.  
+- **Users** see clear, professional page titles in browser tabs.  
+
+---
+
+👉 Do you want me to also show you how to add **structured data (JSON‑LD)** so Google can display rich snippets (like services, reviews, or contact info) for your site?

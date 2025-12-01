@@ -1,0 +1,61 @@
+Perfect! Let’s create a **FAQPage JSON‑LD** block you can paste into your FAQ page (or any page with common questions). This will allow Google to show expandable answers directly in search results.
+
+---
+
+## 📑 Example FAQPage JSON‑LD
+Add this inside the `<head>` of your **FAQ page**:
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you attend rental inspections on my behalf?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we attend open homes and private inspections for clients in Hobart."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help with student housing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide independent checks to ensure students get accurate information about housing options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer relocation support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we assist with settling into new homes and communities in Tasmania."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do landlords use your services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we conduct routine property inspections for landlords to ensure their properties are well maintained."
+      }
+    }
+  ]
+}
+</script>
+```
+
+---
+
+## ✅ How to Use
+- Place this block in the `<head>` of your FAQ page.  
+- Replace questions/answers with your actual FAQ content.  
+- Keep answers concise (Google prefers short, clear text).  
+- Validate with **Google’s Rich Results Test** to confirm it’s working.  
+
+---
+
+👉 Do you want me to also show you how to **combine multiple schema types** (e.g., LocalBusiness + FAQPage) on the same page without conflicts, so you maximize SEO impact?
