@@ -34,20 +34,24 @@ document.querySelector("#app").innerHTML = `
 
     <!-- About Section -->
   <section class="mt-32 px-14 mx-auto" id="about">
-    <div class="mb-7">
+    <div class="mb-20">
       <span class="font-medium uppercase text-main">Who we are</span>
       <h2 class="text-4xl text-heading font-bold uppercase mt-3">
       Australia’s Independent Property Inspectors
       </h2>
     </div>
-    <div class="text-text-1">
-      <p>
-        Trusted Inspection Diary provides honest, independent property inspections across Australia, from Sydney to Perth, Melbourne to Brisbane, and beyond. We deliver detailed photo and video reports within 24 hours, helping renters, buyers, and investors make confident decisions nationwide.
-      </p>
-      <p>
-        Our experienced inspectors offer thorough, objective assessments of property condition and neighbourhoods. Guided by transparency, reliability, and integrity, we are your trusted eyes on the ground across all Australian states and territories.
-      </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <img src="/images/about-us.jpg" alt="About Trusted Inspection Diary" class="w-full h-auto object-cover rounded-lg"/>
+      <div class="text-text-1">
+        <p class="mb-7">
+          Trusted Inspection Diary provides honest, independent property inspections across Australia, from Sydney to Perth, Melbourne to Brisbane, and beyond. We deliver detailed photo and video reports within 24 hours, helping renters, buyers, and investors make confident decisions nationwide.
+        </p>
+        <p>
+          Our experienced inspectors offer thorough, objective assessments of property condition and neighbourhoods. Guided by transparency, reliability, and integrity, we are your trusted eyes on the ground across all Australian states and territories.
+        </p>
+      </div>
     </div>
+    
   </section>
 
     <!-- Service Section -->
