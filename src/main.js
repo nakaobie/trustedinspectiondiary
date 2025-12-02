@@ -50,7 +50,7 @@ document.querySelector("#app").innerHTML = `
           Our experienced inspectors offer thorough, objective assessments of property condition and neighbourhoods. We work in accordance with the current Australian Standards and, because we are independent of any third parties, you can be confident that the property report has been prepared for you.
         </p>
 
-        <button class="cta-button ">Explore properties</button>
+        <button class="cta-button ">Explore services</button>
       </div>
     </div>
     
@@ -61,7 +61,7 @@ document.querySelector("#app").innerHTML = `
   <div class="mb-7">
       <span class="font-medium uppercase text-main">What we are about</span>
       <h2 class="text-4xl text-heading font-bold uppercase mt-3">
-      Comprehensive Property Inspection Services Across Australia
+      Independent Property Reports You Can Rely On
       </h2>
     </div>
   </section>
