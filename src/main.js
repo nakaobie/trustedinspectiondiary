@@ -57,11 +57,11 @@ document.querySelector("#app").innerHTML = `
   </section>
 
     <!-- Service Section -->
-  <section class="mt-32" id="services">
+  <section class="mt-32 px-14 mx-auto" id="services">
   <div class="mb-7">
       <span class="font-medium uppercase text-main">What we are about</span>
       <h2 class="text-4xl text-heading font-bold uppercase mt-3">
-      Australia’s Independent Property Inspectors
+      Comprehensive Property Inspection Services Across Australia
       </h2>
     </div>
   </section>
