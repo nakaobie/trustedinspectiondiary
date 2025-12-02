@@ -44,10 +44,10 @@ document.querySelector("#app").innerHTML = `
       <img src="/images/about-us.jpg" alt="About Trusted Inspection Diary" class="w-full h-auto object-cover rounded-lg"/>
       <div class="text-text-1">
         <p class="mb-7">
-          We provides independent property inspections across Australia delivering detailed photos and video reports within 24 hours, helping renters, buyers, and investors make informed decisions. Whether you’re interstate, overseas, or simply can’t attend in person, our independent inspections are transparent trustworthy and reliable giving you peace of mind with your decision.
+          We provides independent property inspections across Australia delivering detailed photos and video reports within 24 hours, helping renters, buyers, and investors make informed decisions. Whether you’re interstate, overseas, or simply can’t attend in person, our independent inspections are transparent, trustworthy and reliable giving you peace of mind with your decision.
         </p>
         <p>
-          Our experienced inspectors offer thorough, objective assessments of property condition and neighbourhoods. We work in accordance with the current Australian Standards and, because we are independent of any third parties, you can be confident that the property report has been prepared for you.
+          Our experienced inspectors offer thorough, objective assessments of property condition and neighbourhoods. We work in accordance with the current Australian Standards and, because we are independent of any third parties, you can be confident that the property report has been prepared for you. Our services reduce risk and uncertainty. Instead of relying solely on listings or agent descriptions, you get objective, visual evidence and local context before committing.
         </p>
 
         <button class="cta-button ">Explore services</button>
